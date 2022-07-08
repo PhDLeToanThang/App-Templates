@@ -1,7 +1,4 @@
 [
- {
-  "version": "2",
-  "templates": [
   {
     "type": 1,
     "title": "Airsonic",
@@ -4221,6 +4218,3 @@
     ]
   }
 ]
-}
-]
-   
