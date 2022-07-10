@@ -1003,9 +1003,10 @@
           "label": "HTTPS port",
           "description": "Host port to expose HTTPS port of Dokku (443 if empty)",
           "default": "443"
-        },
-
-
+        }
+        }
+      ]
+    },
 
 	  {
     "type": 1,
@@ -5223,7 +5224,6 @@
         "label": "DB_HOST",
         "default": "postgres"
       }
-		
       ]
     }
   ]
