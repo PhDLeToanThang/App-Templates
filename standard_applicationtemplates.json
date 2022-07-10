@@ -1004,9 +1004,10 @@
           "description": "Host port to expose HTTPS port of Dokku (443 if empty)",
           "default": "443"
         },
-		# ket thuc neu khong co dau , 
-	# them json cua App Template khac sau khi co dau },
-		  {
+
+
+
+	  {
     "type": 1,
     "title": "Airsonic",
     "name": "airsonic",
