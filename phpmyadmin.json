@@ -1,6 +1,13 @@
 {
 	"version": "2",
-	"services": {
+	"templates": [
+    {
+      "type": 1,
+      "title": "PhpMySQL",	
+      "description": "Database Manager via Web PHP",
+      "categories": ["Database"],	
+	  "platform": "linux",
+	  "services": {
 		"phpmyadmin": {
 			"restart": "always",
 			"image": "phpmyadmin/phpmyadmin",
@@ -18,5 +25,7 @@
 				"PMA_ABSOLUTE_URI=http://example.com/phpmyadmin/"
 			]
 		}
-	}
+    }
+  }
+ ]
 }
