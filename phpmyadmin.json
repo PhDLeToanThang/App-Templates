@@ -14,15 +14,19 @@
 			"container_name": "phpmyadmin",
 			"hostname": "phpmyadmin",
 			"domainname": "example.com",
-			"ports": [
-				"8000:80"
+			"ports": ["8000:80"],
+			"volumes": [
+			 "/sessions",
+			 "~/docker/phpmyadmin/config.user.inc.php:/etc/phpmyadmin/config.user.inc.php",
+			 "/custom/phpmyadmin/theme/:/www/themes/theme/"
 			],
 			"environment": [
 				"PMA_HOSTS=172.26.36.7,172.26.36.8,172.26.36.9,172.26.36.10",
 				"PMA_VERBOSES=production-db1,production-db2,dev-db1,dev-db2",
 				"PMA_USER=root",
 				"PMA_PASSWORD=",
-				"PMA_ABSOLUTE_URI=http://example.com/phpmyadmin/"
+				"PMA_ABSOLUTE_URI=http://example.com/phpmyadmin/",
+				"PMA_ARBITRARY=1"
 			]
 		}
     }
