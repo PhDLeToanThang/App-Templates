@@ -175,7 +175,7 @@
     },
     {
       "type": 1,
-      "title": "CrateDB",
+      "title": "crate",
       "description": "An open-source distributed SQL database",
       "categories": ["database"],
       "platform": "linux",
